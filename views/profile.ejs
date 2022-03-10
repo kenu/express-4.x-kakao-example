@@ -1,9 +1,11 @@
 <p>
 ID: <%= user.id %><br/>
-Name: <%= user.displayName %><br/>
+<% if (user._json.kakao_account.profile.nickname) { %>
+Name: <%= user._json.kakao_account.profile.nickname %><br/>
+<% } %>
 <% if (user.emails) { %>
 Email: <%= user.emails[0].value %><br/>
 <% } %>
 </p>
-<img src="<%= user.profile_image %>">
+<img src="<%= user._json.kakao_account.profile.thumbnail_image_url %>">
 <p><a href="/logout">Log Out</a></p>

@@ -13,7 +13,7 @@ var Strategy = require('passport-kakao').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-    clientID: process.env['KAKAO_CLIENT_ID'],
+    clientID: process.env['KAKAO_CLIENT_REST_ID'],
     clientSecret: process.env['KAKAO_CLIENT_SECRET'],
     callbackURL: '/return',
     scope: 'profile_image'

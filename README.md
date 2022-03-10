@@ -20,7 +20,7 @@ consumer secret needed to access [Kakao's API](https://developers.kakao.com/cons
 Start the server with those variables set to the appropriate credentials.
 
 ```bash
-$ KAKAO_CLIENT_ID=__KAKAO_CLIENT_ID__ KAKAO_CLIENT_SECRET=__KAKAO_CLIENT_SECRET__ node server.js
+$ KAKAO_CLIENT_REST_ID=__KAKAO_CLIENT_REST_ID__ KAKAO_CLIENT_SECRET=__KAKAO_CLIENT_SECRET__ node server.js
 ```
 
 Open a web browser and navigate to [http://localhost:3000/](http://localhost:3000/)
