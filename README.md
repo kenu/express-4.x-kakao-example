@@ -10,9 +10,9 @@ To install this example on your computer, clone the repository and install
 dependencies.
 
 ```bash
-$ git clone https://github.com/kenu/express-4.x-kakao-example.git
-$ cd express-4.x-kakao-example
-$ npm install
+git clone https://github.com/kenu/express-4.x-kakao-example.git
+cd express-4.x-kakao-example
+npm i
 ```
 
 The example uses environment variables to configure the consumer key and
@@ -20,7 +20,7 @@ consumer secret needed to access [Kakao's API](https://developers.kakao.com/cons
 Start the server with those variables set to the appropriate credentials.
 
 ```bash
-$ KAKAO_CLIENT_REST_ID=__KAKAO_CLIENT_REST_ID__ KAKAO_CLIENT_SECRET=__KAKAO_CLIENT_SECRET__ node server.js
+KAKAO_CLIENT_REST_ID=__KAKAO_CLIENT_REST_ID__ KAKAO_CLIENT_SECRET=__KAKAO_CLIENT_SECRET__ node server.js
 ```
 
 Open a web browser and navigate to [http://localhost:3000/](http://localhost:3000/)
